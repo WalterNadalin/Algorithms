@@ -47,3 +47,4 @@ Some comments:
   * Naïve and dynamic programming solutions are implemented for chain matrix multiplication
   * Insertion and deletion of a node, search of the maximum, minimum and of an arbitrary value are implemented for the three data structures
   * Naïve and Knuth-Morris algorithms are implemented for pattern matching
+  * The suffix tree is built using both brutal construction and McCreight`s algorithm
