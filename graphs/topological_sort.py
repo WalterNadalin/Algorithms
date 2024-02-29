@@ -1,5 +1,5 @@
 from depth_first_search import depth_first_search
-from adjacent_list import adjacent_list
+from data_structures.adjacency_list import adjacency_list
 
 def topological_sort(A):
   depth_first_search(A)
@@ -16,8 +16,8 @@ def topological_sort(A):
 if __name__ == "__main__":
   V = ['watch', 'pants', 'socks', 'shoes', 'tie', 'underwear', 'coat', 'shirt', 'belt']
   E = [('pants', 'underwear'), ('shoes', 'underwear'), ('shoes', 'socks'), ('shoes', 'pants'), ('belt', 'pants'), ('belt', 'shirt'), ('tie', 'shirt'), ('coat', 'tie'), ('coat', 'belt')]
-  A = adjacent_list(V, E)
-  print('Adjacent list:')
+  A = adjacency_list(V, E)
+  print('Adjacency list:')
   print(A)
   print('\nTopological sort:')
   print(topological_sort(A))

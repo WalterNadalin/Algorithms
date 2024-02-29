@@ -1,11 +1,11 @@
-from adjacent_list import adjacent_list, color, empty_queue
+from data_structures.adjacency_list import adjacency_list, color, queue
 
 def breath_first_search(A, s):
   u = A.find(s)
   u[0].color = color.green
   u[0].distance = 0
 
-  Q = empty_queue()
+  Q = queue()
   Q.enqueue(s)
 
   while not Q.is_empty():
@@ -22,7 +22,7 @@ def breath_first_search(A, s):
         v.parent = l[0]
         Q.enqueue(v.key)
       elif v.color is l[0].color:
-        assert False, 'FAIL'
+        assert False, 'A two coloring is not admitted by this graph.'
 
 def assign_color(v):
   if is_even(v.distance):
@@ -49,10 +49,8 @@ def print_path(A, s, v):
 if __name__ == "__main__":
   V = ['a', 'b', 'c', 'd', 'f', 'g']
   E = [('b', 'a'), ('a', 'b'), ('b', 'c'), ('c', 'b'), ('d', 'b'), ('b', 'd'), ('f', 'd'), ('d', 'f'), ('f', 'g'), ('g', 'f')]
-  A = adjacent_list(V, E)
-  print('Adjacent list:')
-  # print(A)
+  A = adjacency_list(V, E)
+  print('Adjacency list:')
   breath_first_search(A, 'a')
   print(A)
-  # print('\nPath from a to h:')
-  # print_path(A, 'a', 'h')
+

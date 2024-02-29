@@ -10,7 +10,7 @@ class color:
   green = 3
   blue = 4
 
-class empty_queue:
+class queue:
   def __init__(self):
     self.Q = []
 
@@ -26,7 +26,7 @@ class empty_queue:
   def __str__(self):
     return f'{self.Q!r}'
 
-class adjacent_list:
+class adjacency_list:
   def __init__(self, V, E):
     self.list = [[node(v)] for v in V]
 
@@ -85,5 +85,5 @@ class node:
 if __name__ == "__main__":
   V = ['a', 'b', 'c', 'd']
   E = [('a', 'b'), ('b', 'c'), ('c', 'd'), ('d', 'd'), ('d', 'b')]
-  example = adjacent_list(V, E)
+  example = adjacency_list(V, E)
   print(example)

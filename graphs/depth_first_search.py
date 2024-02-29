@@ -1,4 +1,4 @@
-from adjacent_list import adjacent_list, color, empty_queue
+from data_structures.adjacency_list import adjacency_list, color
 
 t = 0
 k = 0
@@ -37,8 +37,8 @@ def visit(A, s):
 if __name__ == "__main__":
   V = [1, 2, 3]
   E = [(2, 1), (3, 1), (3, 2)]
-  A = adjacent_list(V, E)
-  print('Adjacent list:')
+  A = adjacency_list(V, E)
+  print('Adjacency list:')
   print(A)
   depth_first_search(A)
 
