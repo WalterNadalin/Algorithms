@@ -242,11 +242,11 @@ class node:
 if __name__ == "__main__":
   example = rbtree(4, 7, 12, 10, 13, 3, 15, 16)
   print(example)
-  #print(example.maximum())
-  #print(example.minimum())
-  #example.insert(3)
-  #print(example)
-  #print(example.search(3))
+  print('Maximum:', example.maximum())
+  print('Minimum:', example.minimum())
+  example.insert(2)
+  print('\nInserting 2:')
+  print(example)
   x = example.minimum()
 
   while x is not example.maximum():
@@ -254,5 +254,3 @@ if __name__ == "__main__":
     x = x.successor()
 
   print(x)
-
-
