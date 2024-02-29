@@ -5,7 +5,8 @@ Inside the folders there are some implementations of the following algorithms:
 
   * **Graphs** 
     
-    * Breadth and depth first search
+    * Breadth first search
+    * Depth first search
     * Dijkstra
     * Topological sort
     * Two coloring
