@@ -136,7 +136,6 @@ class node:
 
         return None
 
-
 if __name__ == "__main__":
     tree = binary_search_tree(3, 2, 0, 1, 6, 4, 7, 5, 9)
     tree.remove(3)
