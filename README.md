@@ -36,7 +36,7 @@ Inside the folders there are some implementations of the following algorithms:
     * Suffix tree
     * Suffix array
     * Pattern matching
-    * Couting pattern repetition
+    * Counting pattern repetitions
     * Longest repeating factor
     * Longest suffix prefix
    
