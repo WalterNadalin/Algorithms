@@ -43,7 +43,7 @@ Inside the folders there are some implementations of the following algorithms:
 -----
   
 Some comments:
-  * For some algorithms on graphs an adjacency list representation is implemented, for some others an adjacency matrix
+  * For some algorithms on graphs an adjacency list representation is implemented, for some others an adjacency matrix representation
   * Naïve, divide-et-conquera and Strassen's algorithms are implemented for matrix multiplication
   * Naïve and dynamic programming solutions are implemented for chain matrix multiplication
   * Insertion and deletion of a node, search of the maximum, minimum and of an arbitrary value are implemented for the three data structures
